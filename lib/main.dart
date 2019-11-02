@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rfv2/modules/login/login.dart';
 import 'package:flutter_rfv2/modules/products/productView.dart';
 import 'package:flutter_rfv2/pages/homePage.dart';
 import 'common/app_constants.dart';
@@ -17,10 +18,11 @@ class MyApp extends StatelessWidget {
       title: AppConstants.appTitle,
       debugShowCheckedModeBanner: false,
       theme: theme,
-      home: HomePage(),
+      home: LoginScreen(),
       routes:  {
         Routes.products: (context) => ProductsView(),
         Routes.home: (context) => HomePage(),
+        Routes.login: (context) => LoginScreen(),
       },
     );
   }

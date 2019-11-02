@@ -26,8 +26,14 @@ class AppDrawer extends StatelessWidget {
               ),
           Divider(),       
           _createDrawerItem(icon: Icons.help, text: 'Ayuda'),
-          Divider(),
           _createDrawerItem(icon: Icons.bug_report, text: 'Report an issue'),
+          Divider(),
+           _createDrawerItem(
+              icon: Icons.remove_circle_outline,
+              text: 'Salir',
+              onTap: () => Navigator.pushReplacementNamed(context, Routes.login) 
+              ),
+          Divider(),
           ListTile(
             title: Text('0.0.1'),
             onTap: () {},
